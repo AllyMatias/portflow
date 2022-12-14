@@ -5,14 +5,15 @@
     font-family: 'Montserrat', sans-serif;
 }
 header {
-    border: 2px solid seagreen;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 13vh;
     width: 100%;
     background-color: #ffff;
-    position: fixed;
+    position:-webkit-sticky; 
+    position:sticky; 
+    top: 0;
     z-index: 1;
 }
 .Portfolio a {
@@ -31,7 +32,6 @@ header {
     transform: scale(1.1);
 }
 header h2 {
-    border: solid darkblue;
     display: flex;
     justify-content: flex-end;
     font-size: 30px;
@@ -43,21 +43,17 @@ a {
     color: gainsboro;
 }
 header nav ul {
-    border: solid hotpink;
     display: flex;
     justify-content: space-around;
     width: 40vw;
 }
 header nav ul li {
-    border: solid khaki;
     list-style: none;
 }
 main {
-    padding-top: 97px;
     width: 100%;
 }
 .firstSectionMain {
-    border: solid darkmagenta;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -68,13 +64,11 @@ main {
     height: 80vh;
 }
 h1 {
-    border: solid red;
     color: #ffff;
     font-size: 60px;
     padding-top: 40px;
 }
 h3 {
-    border: solid peru;
     padding-top: 50px;
     color: #ffff;
     font-weight: lighter;
@@ -89,7 +83,6 @@ h3:hover {
     transform: scale(1.1);
 }
 .secondSectionMain {
-    border: solid lightcoral;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -113,7 +106,6 @@ figure:hover {
     transform: scale(1.1);
 }
 footer {
-    border: solid gold;
     display: flex;
     align-items: center;
     background-color: #f6f6f6;
@@ -121,7 +113,6 @@ footer {
     width: 100%;
 }
 .footerIcons {
-    border: solid darkmagenta;
     display: flex;
     justify-content: space-around;
     padding-left: 125px;
@@ -132,25 +123,22 @@ footer {
     width: auto;
 }
 footer section {
-    border: solid darkgreen;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 900px;
 }
 footer h2 {
-    border: solid khaki;
     font-size: 18px;
     width: 120px;
 }
 footer p {
-    border: solid chocolate;
     font-size: 12px;
     width: 500px;
 }
 @media(min-width:201px) and (max-width: 500px){
     header {
-    border: 2px solid seagreen;
+        border: solid hotpink;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -164,7 +152,6 @@ footer p {
         display: block;
     }
     h2 {
-        border: solid darkblue;
         display: flex;
         font-size: 20px;
         font-weight: bold;
@@ -190,10 +177,10 @@ footer p {
         height: 0;
     }
     main {
-        padding-top: -97px;
+
     }
     .firstSectionMain {
-        border: solid darkmagenta;
+        margin-top: 0;
         display: flex;
         background-image: url("./assets/main-1.png");
         background-position: 83%;
@@ -201,13 +188,11 @@ footer p {
         width: 100%;
     }
     h1 {
-        border: solid red;
         color: #ffff;
         font-size: 40px;
         padding-top: 10px;
     }
     h3 {
-        border: solid peru;
         color: #ffff;
         font-weight: lighter;
         font-size: 25px;
@@ -234,7 +219,8 @@ footer p {
         height: 7vh;
     }
     footer section {
-       width: 65%;
+       border: solid red;
+        width: 65%;
        display: flex;
        align-content: space-around;
        justify-items: start;
@@ -244,6 +230,7 @@ footer p {
 
     }
     footer p {
+        border: solid green;
         font-size: 12px;
         width: 80%;
     }
