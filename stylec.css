@@ -54,6 +54,7 @@ header nav ul li {
 }
 main {
     padding-top: 97px;
+    width: 100%;
 }
 .firstSectionMain {
     border: solid darkmagenta;
@@ -149,11 +150,18 @@ footer p {
 }
 @media(min-width:201px) and (max-width: 500px){
     header {
-        border: 2px solid seagreen;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 5vh;
+    border: 2px solid seagreen;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5vh;
+    width: 100%;
+    background-color: #ffff;
+    position: fixed;
+    z-index: 1;
+    }
+    .navPortflow {
+        display: block;
     }
     h2 {
         border: solid darkblue;
@@ -174,14 +182,12 @@ footer p {
         transform: scale(100);
     }
     header nav ul {
-        border: solid hotpink;
-        display: flex;
-        justify-content: space-around;
-        width: 40vw;
+        opacity: 0;
+        height: 0;
     }
     header nav ul li {
-        border: solid khaki;
-        list-style: none;
+        opacity: 0;
+        height: 0;
     }
     main {
         padding-top: -97px;
@@ -207,7 +213,7 @@ footer p {
         font-size: 25px;
     }
     .secondSectionMain {
-        height: 580vh;
+        height: 620vh;
         width: 100%;
     }
     footer {
@@ -216,6 +222,7 @@ footer p {
         align-items: flex-start;
         flex-wrap: wrap;
         height: 25vh;
+        width: 100%;
     }
     .footerIcons {
         background-color: #7FDBD4;
@@ -238,6 +245,6 @@ footer p {
     }
     footer p {
         font-size: 12px;
-        width: 50%;
+        width: 80%;
     }
     }
