@@ -210,6 +210,12 @@ footer h2 {
         padding-top: 0;
         font-size: 15px;
     }
+    h3:hover {
+        text-decoration: underline;
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
     .secondSectionMain {
         height: auto;
         width: 100%;
