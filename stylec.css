@@ -35,7 +35,6 @@ header {
     transform: scale(1.1);
 }
 header h2 {
-    border: solid skyblue;
     display: flex;
     justify-content: flex-end;
     font-size: 30px;
@@ -126,17 +125,22 @@ footer {
     height: 25px;
     width: auto;
 }
-footer section {
+.footerText {
+    border: solid gold;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     width: 900px;
+    height: 7vh;
 }
 footer h2 {
+    border: solid firebrick;
     font-size: 18px;
     width: 120px;
 }
 .textFooter {
+    border: solid olivedrab;
     font-size: 12px;
     width: 500px;
 }
@@ -185,12 +189,11 @@ footer h2 {
         opacity: 0;
         height: 0;
     }
-    main {
-
-    }
     .firstSectionMain {
-        margin-top: 0;
+        padding-left: 20px;
         display: flex;
+        justify-content: end;
+        padding-bottom: 50px;
         background-image: url("./assets/main-1.png");
         background-position: 83%;
         height: 80vh;
@@ -199,11 +202,13 @@ footer h2 {
     h1 {
         color: #ffff;
         font-size: 40px;
-        padding-top: 10px;
+        padding-top: 0px;
+        padding-bottom: 30px;
     }
     h3 {
         color: #ffff;
         font-weight: lighter;
+        padding-top: 0;
         font-size: 25px;
     }
     .secondSectionMain {
@@ -233,7 +238,6 @@ footer h2 {
        display: flex;
        flex-wrap: wrap;
        height: 18vh;
-       padding: 0;
     }
     .copyrightText {
         border: solid salmon;
@@ -244,6 +248,7 @@ footer h2 {
         width: 60%;
         height: 17vh;
         padding: 0;
+        margin: 0;
     }
     footer h2 {
         border: solid tomato;
