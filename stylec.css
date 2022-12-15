@@ -16,6 +16,9 @@ header {
     top: 0;
     z-index: 1;
 }
+.menuMobile {
+    display: none;
+}
 .Portfolio a {
     color: black;
     font-weight: bold;
@@ -32,6 +35,7 @@ header {
     transform: scale(1.1);
 }
 header h2 {
+    border: solid skyblue;
     display: flex;
     justify-content: flex-end;
     font-size: 30px;
@@ -136,6 +140,10 @@ footer h2 {
     font-size: 12px;
     width: 500px;
 }
+.buttonTopo {
+    display: none;
+}
+
 @media(min-width:201px) and (max-width: 500px){
     header {
     border: solid hotpink;
@@ -157,15 +165,17 @@ footer h2 {
         display: flex;
         justify-content: center;
         background-color: black;
-        width: 40%;
+        width: 35%;
         height: 3vh;
     }
-    h2 {
+    header h2 {
         border: solid seagreen;
-        font-size: 10px;
-        font-weight: bold;
+        font-size: 16px;
+        font-weight: bolder;
+        display: flex;
+        align-items: center;
         height: 3vh;
-        width: 100px;
+        width: 150px;
     }
     header nav ul {
         opacity: 0;
@@ -221,24 +231,29 @@ footer h2 {
        border: solid red;
        width: 100%;
        display: flex;
-
+       flex-wrap: wrap;
        height: 18vh;
+       padding: 0;
     }
     .copyrightText {
         border: solid salmon;
         display: flex;
-        justify-content: flex-end;
-        flex-direction: column;
+        flex-wrap: wrap;
+        Flex-direction: column;
+        Justify-content: flex-start;
         width: 60%;
         height: 17vh;
+        padding: 0;
     }
     footer h2 {
+        border: solid tomato;
         font-size: 12px;
     }
     .textFooter {
         border: solid green;
         font-size: 12px;
         width: 80%;
+        padding: 0;
     }
     .buttonTopo {
         border: solid fuchsia;
